@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\array_binary_search XUnitTest\array_binary_search XUnitTest.csproj" />
+  </ItemGroup>
+
 </Project>
