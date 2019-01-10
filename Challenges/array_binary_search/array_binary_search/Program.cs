@@ -15,7 +15,7 @@ namespace array_binary_search
                 Console.Write($"{newArray[i]}, ");
 
             }
-
+            Console.WriteLine();
 
         }
 
