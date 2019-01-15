@@ -21,7 +21,7 @@ namespace LinkedList
             list.Print();
 
             list.Append(16);
-            list.Append(99);
+            list.Append(23);
             list.Append(42);
 
             list.Print();
