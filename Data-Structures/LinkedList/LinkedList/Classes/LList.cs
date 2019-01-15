@@ -42,6 +42,7 @@ namespace LinkedList.Classes
 
         public void Print()
         {
+
             if(Head != null)
             {
                 Current = Head;
@@ -71,6 +72,7 @@ namespace LinkedList.Classes
             }
 
             Node node = new Node(value);
+            Current.Next = node;
         }
         public void InsertBefore(int value, int newValue)
         {
