@@ -42,10 +42,73 @@ namespace LinkedList.Classes
 
         public void Print()
         {
-            // output to the console list
+            if(Head != null)
+            {
+                Current = Head;
+
+                while(Current.Next != null)
+                {
+                    System.Console.Write($"{Current.Value} =>");
+                    Current = Current.Next;
+                }
+
+                System.Console.Write($"{Current.Value} => Null");
+                Console.WriteLine("");
+            }
+            else
+            {
+                System.Console.WriteLine("Your LL is empty");
+            }
+
+
         }
 
+        public void Append(int value)
+        {
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+            }
 
+            Node node = new Node(value);
+        }
+        public void InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+            if( Current.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
 
+                Current = Current.Next;
+            }
+        }
+        public void InsertAfter(int value, int newValue)
+        {
+            Current = Head;
+          
+            while (Current.Next != null)
+            {
+                if(Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+
+                }
+                Current = Current.Next;
+            }
+        }
     }
 }
