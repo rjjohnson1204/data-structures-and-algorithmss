@@ -1,37 +1,46 @@
 ﻿using System;
-using LinkedList;
-using System.Collections;
 using LinkedList.Classes;
+using System.Collections;
+
 
 namespace LinkedList
 {
     class Program
     {
-       public static void Main(string[] args)
-       {
-            Node node = new node;
+        static void Main(string[] args)
+        {
+            LList list = new LList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(15);
+            list.Insert(23);
+            list.Insert(21);
 
-       }
+            Console.WriteLine(PosFrmEnd(list.Head, 3));
 
-        public int PosFrmEnd(Node head, int k)
+        }
+
+        static int PosFrmEnd(Node head, int k)
         {
             if (head == null)
             {
                 return 0;
             }
-                Node current = head;
-                while (k > 0)
-                {
-                current = current.next;
+            Node runner = head;
+            while (k >= 0)
+            {
+                runner = runner.Next;
                 k--;
-                }
-                Node walker = head;
-                while( current != null)
-                {
-                current = current.next;
-                walker = walker.next;
+            }
+            Node walker = head;
+            while (runner != null)
+            {
+                runner = runner.Next;
+                walker = walker.Next;
 
-                }
-            int i = walker.value;
+            }
+            int i = walker.Value;
             return i;
         }
+    }
+}
