@@ -8,39 +8,30 @@ namespace LinkedList
     class Program
     {
        public static void Main(string[] args)
+       {
+            Node node = new node;
+
+       }
+
+        public int PosFrmEnd(Node head, int k)
         {
-          
-                LList list = new LList();
-                list.Insert(4);
-                list.Insert(8);
-                list.Insert(15);
-
-               
-            
-        }
-        counter = 0;
-        value k = i;
-
-        while ( Current.Next != null)
+            if (head == null)
             {
-            counter ++;
+                return 0;
             }
+                Node current = head;
+                while (k > 0)
+                {
+                current = current.next;
+                k--;
+                }
+                Node walker = head;
+                while( current != null)
+                {
+                current = current.next;
+                walker = walker.next;
 
-        while (int i = 0; if =< kspot , i++)
-                return node value
-    }
-
-
-
-        if(head ==null)
-        {
-            return 0;
+                }
+            int i = walker.value;
+            return i;
         }
-        Current.Node = head;
-        while(k > 0) 
-        {
-            Current = Current.Next;
-            k--;
-        }
-}
-
