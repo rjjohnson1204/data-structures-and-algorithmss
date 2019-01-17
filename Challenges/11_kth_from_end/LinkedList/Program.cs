@@ -5,9 +5,9 @@ using System.Collections;
 
 namespace LinkedList
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             LList list = new LList();
             list.Insert(4);
@@ -20,7 +20,7 @@ namespace LinkedList
 
         }
 
-        static int PosFrmEnd(Node head, int k)
+        public static int PosFrmEnd(Node head, int k)
         {
             if (head == null)
             {
