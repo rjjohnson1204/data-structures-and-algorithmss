@@ -1,4 +1,5 @@
 ﻿using System;
+using LinkedList;
 
 namespace _11_merge
 {
@@ -10,10 +11,21 @@ namespace _11_merge
             Merge();
         }
 
+        
          public static void Merge(LinkedList one, LinkedList two)
         {
-            Merge_list
+            while (Node != null)
+            {
+
+            }
         }
+                node temp -> 1two.curr.next
+                1two.curr -> 1one.next
+                1lone.curr.next -> 1two.curr
+                1two.curr -> temp
+                1one.curr -> 1one.next.next
+
+        
     }
 
 }

@@ -6,4 +6,10 @@
     <RootNamespace>_11_merge</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="LinkedList">
+      <HintPath>..\..\..\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\LinkedList.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
