@@ -22,6 +22,6 @@ Conceptualy I think we comprehend the operation that is to occur but the termino
 
 ##Here is an image of what the game displays when there is a winner.
 
-![....place holder....]( ...place holder...) 
+![merged whiteboard photo](https://github.com/rjjohnson1204/data-structures-and-algorithmss/blob/master/Assets/merged_whiteboard_image.jpg) 
 
 
