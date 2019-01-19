@@ -11,7 +11,11 @@ namespace StacksAndQueues.Classes
         public Node Next { get; set; }
 
 
-        //node constructor
+        /// <summary>
+        ///node constructor
+        /// <param int="value">value</param>
+        /// </summary>
+        /// <returns></returns>
         public Node(int value)
         {
             Value = value;
