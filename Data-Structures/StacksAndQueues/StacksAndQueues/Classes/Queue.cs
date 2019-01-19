@@ -4,20 +4,28 @@ using System.Text;
 
 namespace StacksAndQueues.Classes
 {
-    class Queues
+    class Queue
     {   
         // properties 
         public Node Front { get; set; }
         public Node Rear  { get; set; }
 
-        // constructor
-        public Queues(Node node)
+        /// <summary>
+        /// constructor
+        /// <param Node="node">value</param>
+        /// </summary>
+        /// <returns></returns>
+        public Queue(Node node)
         {
             Front = node;
             Rear = node;
         }
 
-        // enqueue
+        /// <summary>
+        /// enqueue
+        /// <param int="value">value</param>
+        /// </summary>
+        /// <returns></returns>
         public void Enqueue(int value)
         {
             Node node = new Node(value);
@@ -25,7 +33,11 @@ namespace StacksAndQueues.Classes
             Rear = node;
         }
 
-        // dequeue
+        /// <summary>
+        /// dequeue
+        /// <param ="">value</param>
+        /// </summary>
+        /// <returns> temp </returns>
         public Node Dequeue()
         {
             // creates a tempiraty node to keep the original front of queue
@@ -39,7 +51,11 @@ namespace StacksAndQueues.Classes
             return temp;
         }
 
-        //Peek
+        /// <summary>
+        ///Peek
+        /// <param ="">value</param>
+        /// </summary>
+        /// <returns> Front </returns>
         public Node Peek()
         {
             return Front;
