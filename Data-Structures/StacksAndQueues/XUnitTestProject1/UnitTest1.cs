@@ -20,7 +20,7 @@ namespace XUnitTestProject1
         }
 
         [Fact]
-        public void PushNewNodeToTop()
+        public void PushTest()
         {   // test to see if a new node top node
             Node node = new Node(1);
             Stack test = new Stack(node);
@@ -33,6 +33,46 @@ namespace XUnitTestProject1
 
             test.Push(7);
             Assert.True(test.Top.Value == 7);
+
+        }
+
+        [Fact]
+        public void PopTest()
+        {
+            Stack stack = new Stack();
+
+            stack.Push(9);
+            stack.Push(4);
+            stack.Push(2);
+
+            stack.Pop();
+
+            Assert.Equal(2, stack.Top.Value);
+
+
+        }
+  
+        [Fact]
+        public void PeekTest()
+        {
+
+        }
+
+        [Fact]
+        public void EnqueueTest()
+        {
+
+        }
+
+        [Fact]
+        public void DequequeTest()
+        {
+
+        }
+
+        [Fact]
+        public void QueuePeekTest()
+        {
 
         }
     }
