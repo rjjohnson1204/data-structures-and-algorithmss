@@ -21,7 +21,7 @@ namespace XUnitTestProject1
 
         [Fact]
         public void PushNewNodeToTop()
-        {   // test to see if a new node is being pushed to the top
+        {   // test to see if a new node top node
             Node node = new Node(1);
             Stack test = new Stack(node);
 
