@@ -41,17 +41,14 @@ namespace XUnitTestProject1
         {
             Stack stack = new Stack();
 
-            stack.Push(9);
-            stack.Push(4);
-            stack.Push(2);
+            
+            
 
-            stack.Pop();
 
-            Assert.Equal(2, stack.Top.Value);
 
 
         }
-  
+
         [Fact]
         public void PeekTest()
         {
