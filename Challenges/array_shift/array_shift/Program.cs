@@ -7,12 +7,13 @@ namespace array_shift
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-        }
-        static int array_shift()
-        {
-            int[] array1 = new int[] { 1, 3, 2, 9 };
+        
+        
+            int[] array1 = new int[] { 1, 3, 2, 9, 49, 88 };
+            int searchKey = 15;
+            Console.WriteLine(BinarySearch(array1, searchKey));
 
         }
+
     }
 }
-sdf
