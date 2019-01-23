@@ -15,5 +15,6 @@ namespace queue_with_stacks
         {
 
         }
-    }
+    }   Stack S1 = new Stack;
+        Stack S2 = new Stack;
 }
