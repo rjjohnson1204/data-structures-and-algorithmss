@@ -7,9 +7,9 @@ namespace queue_with_stacks
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            QueueWithStacks();
 
         }
+            QueueWithStacks();
 
         static void QueueWithStacks()
         {
