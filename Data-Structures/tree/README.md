@@ -23,7 +23,7 @@ TBD
 
 
 
-##Here is an image of what the game displays when there is a winner.
+##Here is an image of .....
 
 ![....place holder....]( ...place holder...) 
 
