@@ -4,8 +4,8 @@ using System.Text;
 
 namespace tree
 {
-    class tree
+    class trees
     {
-        public tree Tree { get; set; }
+        public trees Tree { get; set; }
     }
 }
