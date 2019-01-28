@@ -6,4 +6,8 @@
     <RootNamespace>multi_bracket_validation</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Classes\" />
+  </ItemGroup>
+
 </Project>
