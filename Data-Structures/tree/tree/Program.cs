@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using tree;
+using tree.classes;
+
+
 
 namespace tree
 {
@@ -6,7 +11,8 @@ namespace tree
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tree tree = new Tree;
         }
+        
     }
 }
