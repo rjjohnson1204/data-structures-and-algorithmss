@@ -7,6 +7,12 @@ namespace tree
 {
     class Binary_Tree
     {
+        Node = root
+            new Node
+            
+            new node
+
+
         public void PreOrder()
         {
             

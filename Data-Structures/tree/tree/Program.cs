@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using tree;
 using tree.classes;
+using tree;
 
 
 
@@ -11,7 +11,7 @@ namespace tree
     {
         static void Main(string[] args)
         {
-            Tree tree = new Tree;
+            Trees tree = new Trees;
         }
         
     }
