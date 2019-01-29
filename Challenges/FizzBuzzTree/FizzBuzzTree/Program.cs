@@ -7,7 +7,7 @@ namespace FizzBuzzTree
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-        FizzBuzzTree();
+        FizzBuzzTree(); 
 
         }
 
