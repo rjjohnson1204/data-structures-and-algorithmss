@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateBinaryTreeHeight", "CalculateBinaryTreeHeight\CalculateBinaryTreeHeight.csproj", "{36C2CE1B-4EFB-4241-AB06-DAA8E36442D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree-test", "Tree-test\Tree-test.csproj", "{729BC318-45C1-42FF-A9E2-E84BFB8053D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{36C2CE1B-4EFB-4241-AB06-DAA8E36442D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36C2CE1B-4EFB-4241-AB06-DAA8E36442D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36C2CE1B-4EFB-4241-AB06-DAA8E36442D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729BC318-45C1-42FF-A9E2-E84BFB8053D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729BC318-45C1-42FF-A9E2-E84BFB8053D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729BC318-45C1-42FF-A9E2-E84BFB8053D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729BC318-45C1-42FF-A9E2-E84BFB8053D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
