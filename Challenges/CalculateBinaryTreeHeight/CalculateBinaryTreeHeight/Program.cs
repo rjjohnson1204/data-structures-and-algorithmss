@@ -6,15 +6,17 @@ namespace CalculateBinaryTreeHeight
     {
         static int CalculateBinaryTreeHeight(Node root)
         {
-            Max = 0;
             while(left.node || right.node != null)
             {
                 traverse
             }
             if (child.node = left.node && right.node)
             {
+                max = 0;
                 height = max + 1;
             }
+
+            return max;
             
         }
 
