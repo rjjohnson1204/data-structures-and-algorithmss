@@ -1,12 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Graph
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        
     }
 }
