@@ -20,7 +20,7 @@ namespace Graph
         //adds node to the graph
         public void AddNode(Vertex vertex)
         {
-            AdjList.Add(Vertex, new List<Vertex>);
+            AdjList.Add(Vertex, new List<Vertex>());
         }
 
         //adds edges to the graph
