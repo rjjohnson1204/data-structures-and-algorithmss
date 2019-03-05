@@ -1,16 +1,12 @@
 ﻿using System;
 
-namespace FizzBuzzTree
+namespace get_edges
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-        FizzBuzzTree(); 
-
         }
-
-
     }
 }
