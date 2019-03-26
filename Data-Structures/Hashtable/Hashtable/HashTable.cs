@@ -16,21 +16,43 @@ namespace Hashtable.Classes
             HTable = new HashNode[bucket];
         }
 
+        public int Hash (string key)
+        {
+            int indexValue = 0; 
+
+            for (int i = 0; i < key.Length; i++)
+            {
+                indexValue += key[i];
+            }
+
+            indexValue = indexValue % Bucket;
+
+
+        return indexValue; 
+        }
+
+
+        
+
         public void Add(string key, object value)
         {
-            HashNode node = new HashNode(key, value);
+            HashNode newNode = new HashNode(key, value);
 
-            int i = Hash(key);
+            int index = Hash(key);
 
-            if (hashTable[i] == null)
+            if (HTable[index] == null)
             {
-                hashTable[i] = newHash;
+                HTable[index] = newNode;
 
             }
             else
             {
-                HashNode temp = hashTable[i];
-
+                HashNode temp = HTable[index];
+                while(temp.Next != null)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = newNode;
             }
         }
     }
