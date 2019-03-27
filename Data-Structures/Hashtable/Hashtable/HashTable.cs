@@ -23,13 +23,16 @@ namespace Hashtable.Classes
 
             for (int i = 0; i < key.Length; i++)
             {
-                indexValue += key[i];
+                int kValue = key[i];
+                  indexValue = indexValue + kValue;
+                  indexValue = indexValue * 2069;
+
+                  indexValue = indexValue % Bucket;
             }
 
-            indexValue = indexValue % Bucket;
 
 
-        return indexValue; 
+         return indexValue; 
         }
 
 
