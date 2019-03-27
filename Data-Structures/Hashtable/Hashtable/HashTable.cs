@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Hashtable.Classes
 {
     class HashTable
@@ -55,5 +56,55 @@ namespace Hashtable.Classes
                 temp.Next = newNode;
             }
         }
+
+        public object Get(string key)
+        {
+            int index = Hash(key);
+            if (HTable[index] == null)
+            {
+                return null;
+            }
+            else if (HTable[index].Key == key)
+            {
+                return HTable[index].Value;
+            }
+            else
+            {
+                HashNode temp = HTable[index];
+                while (temp.Key != key)
+                {
+                    temp = temp.Next;
+
+                }
+                if (temp.Key == key)
+                {
+                    return temp.Value;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+
+        }
+
+        public bool Contains(string key)
+        {
+            int index = Hash(key);
+            if (HTable[index] == null)
+            {
+                return false;
+
+            }
+            else if (HTable[index].Key == key)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
     }
 }
