@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "repeated_word", "repeated_w
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatedWordTest", "RepeatedWordTest\RepeatedWordTest.csproj", "{8ABC922A-BD46-42FC-80CA-B73AF4683051}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hashtable", "..\..\Data-Structures\Hashtable\Hashtable\Hashtable.csproj", "{76C83BFD-A57C-404A-80F7-71BDB63AD431}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{8ABC922A-BD46-42FC-80CA-B73AF4683051}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ABC922A-BD46-42FC-80CA-B73AF4683051}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ABC922A-BD46-42FC-80CA-B73AF4683051}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76C83BFD-A57C-404A-80F7-71BDB63AD431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76C83BFD-A57C-404A-80F7-71BDB63AD431}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76C83BFD-A57C-404A-80F7-71BDB63AD431}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76C83BFD-A57C-404A-80F7-71BDB63AD431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
