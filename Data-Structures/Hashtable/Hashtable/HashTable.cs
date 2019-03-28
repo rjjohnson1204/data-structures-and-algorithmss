@@ -17,7 +17,7 @@ namespace Hashtable.Classes
             HTable = new HashNode[bucket];
         }
 
-        public int Hash (string key)
+        public int Hash(string key)
         {
             int indexValue = 0; 
 
