@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using Hashtable.Classes;
+using HA
 using Hashtable;
 
 namespace repeated_word
