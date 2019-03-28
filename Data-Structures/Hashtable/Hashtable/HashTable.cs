@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Hashtable.Classes
 {
-   public class HashTablez
+   public class HashTable
     {
         public HashNode[] HTable { get; set; }
 
         public int Bucket { get; set; }
 
-        public HashTablez (int bucket)
+        public HashTable (int bucket)
         {
             Bucket = bucket;
             HTable = new HashNode[bucket];
