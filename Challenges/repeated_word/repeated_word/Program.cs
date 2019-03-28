@@ -1,41 +1,46 @@
 ﻿using System;
-
+using System.Linq;
+using Hashtable.Classes;
+using Hashtable;
 
 namespace repeated_word
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 
             string gnirts = "jack sprat could eat no fat and his wife could eat no lean";
-            Console.WriteLine(gnirts);
-            Console.ReadLine();
+
+            //Console.ReadLine();
+            RepeatedWord(gnirts);
 
         }
 
         public static string RepeatedWord(string gnirts)
         {
             string[] words = gnirts.Split(' ');
-            HashTable table = new HashTable(100);
+            HashTablez table = new HashTablez(100);
 
             for (int i = 0; i < words.Length; i++)
             {
-                string maybe = words[i];
+                int index = table.Hash(words[i]);
 
-                if (words.Contains(maybe))
+ 
+
+                if (table.Contains(words[i]))
                 {
-                    return maybe;
+                    return words[i];
 
                 }
                 else
                 {
-                    table.Add(maybe, maybe);
+                    table.Add(words[i], index);
                 }
 
             }
-            return gnirts;
+            return "no duplicates";
         }
     }
 }
