@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using Hashtable.Classes;
 
 namespace repeated_word
 {
@@ -9,7 +11,7 @@ namespace repeated_word
             Console.WriteLine("Hello World!");
 
             string gnirts = "jack sprat could eat no fat and his wife could eat no lean";
-            Console.WriteLine(gnirts);
+          
             Console.ReadLine();
 
         }
@@ -34,7 +36,7 @@ namespace repeated_word
                 }
 
             }
-            return gnirts;
+            return "no duplicates";
         }
     }
 }
