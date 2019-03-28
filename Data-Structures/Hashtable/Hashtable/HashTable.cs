@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Hashtable.Classes
 {
-    class HashTable
+   public class HashTable
     {
         public HashNode[] HTable { get; set; }
 
