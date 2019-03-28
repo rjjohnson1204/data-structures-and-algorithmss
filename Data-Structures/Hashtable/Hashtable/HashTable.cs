@@ -5,19 +5,19 @@ using System.Text;
 
 namespace Hashtable.Classes
 {
-   public class HashTable
+   public class HashTablez
     {
         public HashNode[] HTable { get; set; }
 
         public int Bucket { get; set; }
 
-        public HashTable (int bucket)
+        public HashTablez (int bucket)
         {
             Bucket = bucket;
             HTable = new HashNode[bucket];
         }
 
-        public int Hash (string key)
+        public int Hash(string key)
         {
             int indexValue = 0; 
 
