@@ -11,7 +11,7 @@ namespace repeated_word
             Console.WriteLine("Hello World!");
 
             string gnirts = "jack sprat could eat no fat and his wife could eat no lean";
-          
+            RepeatedWord(gnirts);
             Console.ReadLine();
 
         }
