@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace tree.Classes
+namespace Tree.Classes
 {
-    class root
+    class Root
     {
     }
 }
