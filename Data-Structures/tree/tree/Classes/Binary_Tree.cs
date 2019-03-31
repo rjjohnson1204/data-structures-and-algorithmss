@@ -1,71 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using tree;
+using Tree;
+using Tree.Classes;
 
-namespace tree
+namespace Tree
 {
-    class Binary_Tree
+    public class BinaryTree : Trees
     {
-        Node = root
-            new Node
-            
-            new node
 
 
-        public void PreOrder()
+        public BinaryTree()
         {
-            
-                if (root.LeftChild != null)
-                {
-
-                PreOrder(root.LeftChild);
-                }
-
-                if (root.RightChild != null)
-                {
-
-                PreOrder(root.RightChild);
-                }
-            
-            return root.Value;
+            Root = null;
+        }
+        public BinaryTree(Node node)
+        {
+            Root = node;
         }
 
-        public void InOrder()
+        /// <summary>
+        /// Pre order traversal(Root-Left-Right)
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="valueList"></param>
+        public void PreOrder(Node node, List<int> valueList)
         {
-            if (Node.LeftChild != null)
+            if (node != null)
             {
-                InOrder(Node.LeftChild);
-
+                valueList.Add(node.Value);
+                PreOrder(node.Left, valueList);
+                PreOrder(node.Right, valueList);
             }
-
-            if (Node.RightChild != null)
-            {
-
-                InOrder(Node.RightChild);
-            }
-
-                    return Node.Value;
-
         }
-
-        public void PostOrder()
+        /// <summary>
+        /// Inorder traversal (left-root-right)
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="valueList"></param>
+        public void InOrder(Node node, List<int> valueList)
         {
-            if (Node.LeftChild != null)
+            if (node != null)
             {
-
-                InOrder(Node.LeftChild);
+                InOrder(node.Left, valueList);
+                valueList.Add(node.Value);
+                InOrder(node.Right, valueList);
             }
-              
-            if (Node.RightChild != null)
+        }
+        /// <summary>
+        /// Post order(Left-Right-Root)
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="valueList"></param>++++++++++
+        public void Postorder(Node node, List<int> valueList)
+        {
+            if (node != null)
             {
-
-                InOrder(Node.RightChild);
+                Postorder(node.Left, valueList);
+                Postorder(node.Right, valueList);
+                valueList.Add(node.Value);
             }
-
-                return Node.Value;
-
-
         }
     }
-}
