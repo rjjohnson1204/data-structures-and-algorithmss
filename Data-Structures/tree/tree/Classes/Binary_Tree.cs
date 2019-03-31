@@ -6,59 +6,82 @@ using Tree.Classes;
 
 namespace Tree
 {
-    public class BinaryTree : Trees
+    public class BinaryTree
     {
+        public Node Root { get; set; }
+        public List<object> ListArray = new List<object>();
 
-
-        public BinaryTree()
-        {
-            Root = null;
-        }
         public BinaryTree(Node node)
         {
             Root = node;
         }
 
-        /// <summary>
-        /// Pre order traversal(Root-Left-Right)
-        /// </summary>
-        /// <param name="node"></param>
-        /// <param name="valueList"></param>
-        public void PreOrder(Node node, List<int> valueList)
+        public BinaryTree()
         {
-            if (node != null)
-            {
-                valueList.Add(node.Value);
-                PreOrder(node.Left, valueList);
-                PreOrder(node.Right, valueList);
-            }
+
         }
-        /// <summary>
-        /// Inorder traversal (left-root-right)
-        /// </summary>
-        /// <param name="node"></param>
-        /// <param name="valueList"></param>
-        public void InOrder(Node node, List<int> valueList)
+
+        public object[] PreOrder(Node root)
         {
-            if (node != null)
+            try
             {
-                InOrder(node.Left, valueList);
-                valueList.Add(node.Value);
-                InOrder(node.Right, valueList);
+                ListArray.Add(root.Value);
+                if (root.LeftChild != null)
+                {
+                    PreOrder(root.LeftChild);
+                }
+                if (root.RightChild != null)
+                {
+                    PreOrder(root.RightChild);
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return ListArray.ToArray();
         }
-        /// <summary>
-        /// Post order(Left-Right-Root)
-        /// </summary>
-        /// <param name="node"></param>
-        /// <param name="valueList"></param>++++++++++
-        public void Postorder(Node node, List<int> valueList)
+
+        public object[] InOrder(Node root)
         {
-            if (node != null)
+            try
             {
-                Postorder(node.Left, valueList);
-                Postorder(node.Right, valueList);
-                valueList.Add(node.Value);
+                if (root.LeftChild != null)
+                {
+                    InOrder(root.LeftChild);
+                }
+                ListArray.Add(root.Value);
+                if (root.RightChild != null)
+                {
+                    InOrder(root.RightChild);
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return ListArray.ToArray();
+        }
+
+        public object[] PostOrder(Node root)
+        {
+            try
+            {
+                if (root.LeftChild != null)
+                {
+                    PostOrder(root.LeftChild);
+                }
+                if (root.RightChild != null)
+                {
+                    PostOrder(root.RightChild);
+                }
+                ListArray.Add(root.Value);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return ListArray.ToArray();
         }
     }
+}
