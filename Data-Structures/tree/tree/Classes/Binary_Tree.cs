@@ -9,7 +9,7 @@ namespace Tree
     public class BinaryTree
     {
         public Node Root { get; set; }
-        public List<object> ListArray = new List<object>();
+        public List<object> ArrayList = new List<object>();
 
         public BinaryTree(Node node)
         {
@@ -25,7 +25,7 @@ namespace Tree
         {
             try
             {
-                ListArray.Add(root.Value);
+                ArrayList.Add(root.Value);
                 if (root.LeftChild != null)
                 {
                     PreOrder(root.LeftChild);
@@ -39,7 +39,7 @@ namespace Tree
             {
                 Console.WriteLine(e.Message);
             }
-            return ListArray.ToArray();
+            return ArrayList.ToArray();
         }
 
         public object[] InOrder(Node root)
@@ -50,7 +50,7 @@ namespace Tree
                 {
                     InOrder(root.LeftChild);
                 }
-                ListArray.Add(root.Value);
+                ArrayList.Add(root.Value);
                 if (root.RightChild != null)
                 {
                     InOrder(root.RightChild);
@@ -60,7 +60,7 @@ namespace Tree
             {
                 Console.WriteLine(e.Message);
             }
-            return ListArray.ToArray();
+            return ArrayList.ToArray();
         }
 
         public object[] PostOrder(Node root)
@@ -75,13 +75,13 @@ namespace Tree
                 {
                     PostOrder(root.RightChild);
                 }
-                ListArray.Add(root.Value);
+                ArrayList.Add(root.Value);
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
-            return ListArray.ToArray();
+            return ArrayList.ToArray();
         }
     }
 }
