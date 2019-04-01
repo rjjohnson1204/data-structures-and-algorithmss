@@ -6,7 +6,7 @@ using Tree.Classes;
 
 namespace Tree
 {
-    public class BinaryTree
+    public class BinaryTree : Node
     {
         public Node Root { get; set; }
         public List<object> ArrayList = new List<object>();
