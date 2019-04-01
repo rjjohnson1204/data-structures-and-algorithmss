@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree_intersection", "Tree_intersection\Tree_intersection.csproj", "{A38E4FF9-3259-411B-BEEE-6CE629A7AF57}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1689FDAE-F4F4-48A4-84BB-2B2B40B654BB} = {1689FDAE-F4F4-48A4-84BB-2B2B40B654BB}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree-intersection-test", "Tree-intersection-test\Tree-intersection-test.csproj", "{94F1E3E5-F192-40D3-90C6-C83C032F2E24}"
 EndProject
