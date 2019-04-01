@@ -1,7 +1,10 @@
 ﻿using System;
+
+
 using System.Linq;
 using Hashtable.Classes;
 using Hashtable;
+
 
 namespace repeated_word
 {
@@ -11,32 +14,40 @@ namespace repeated_word
         {
             Console.WriteLine("Hello World!");
 
-            string gnirts = "jack sprat could eat no fat and his wife could eat no lean";
 
-            //Console.ReadLine();
+            // string to be evaluated
+            string gnirts = "jack sprat could eat no fat and his wife could eat no lean";
             RepeatedWord(gnirts);
 
-        }
+            // displays the repeated word
+            Console.WriteLine($"The repeated word is {RepeatedWord(gnirts)}");
+            
 
+        }
+        // method to find the repeated word
         public static string RepeatedWord(string gnirts)
         {
+            //splits string into individual strings
             string[] words = gnirts.Split(' ');
-            HashTablez table = new HashTablez(100);
+            HashTable table = new HashTable(100);
 
             for (int i = 0; i < words.Length; i++)
             {
                 int index = table.Hash(words[i]);
 
- 
+
 
                 if (table.Contains(words[i]))
                 {
                     return words[i];
 
+
                 }
                 else
                 {
+
                     table.Add(words[i], index);
+
                 }
 
             }
