@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
-using Hashtable.Classes;
+
 
 namespace repeated_word
 {
@@ -24,7 +25,7 @@ namespace repeated_word
         {
             //splits string into individual strings
             string[] words = gnirts.Split(' ');
-            HashTabler table = new HashTabler(100);
+            HashTable table = new HashTable(100);
 
             for (int i = 0; i < words.Length; i++)
             {
