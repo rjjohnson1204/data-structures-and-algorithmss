@@ -1,16 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using tree.classes;
+using Tree.Classes;
 
 
 
-namespace tree
+namespace Tree. Classes
 {
-    class Node
+    public class Node
     {
+        public int Value { get; set; }
         public Node LeftChild { get; set; }
-        public Node RightChild {get; set; }
+        public Node RightChild { get; set; }
+
+        public Node(int value)
+        {
+            Value = value;
+         
+        }
+
+        public Node()
+        {
+
+        }
 
     }
 }

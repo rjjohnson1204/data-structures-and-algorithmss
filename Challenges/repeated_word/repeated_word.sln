@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repeated_word", "repeated_word\repeated_word.csproj", "{23CC6010-DEE0-4E44-BF77-5377374F8914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "repeated_word", "repeated_word\repeated_word.csproj", "{23CC6010-DEE0-4E44-BF77-5377374F8914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedWordTest", "RepeatedWordTest\RepeatedWordTest.csproj", "{8ABC922A-BD46-42FC-80CA-B73AF4683051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatedWordTest", "RepeatedWordTest\RepeatedWordTest.csproj", "{8ABC922A-BD46-42FC-80CA-B73AF4683051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

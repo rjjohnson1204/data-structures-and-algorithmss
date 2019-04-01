@@ -1,19 +1,19 @@
 ﻿using System;
-using System.Collections;
+
 
 using System.Linq;
-
-
-
+using Hashtable.Classes;
+using Hashtable;
 
 
 namespace repeated_word
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
 
             // string to be evaluated
             string gnirts = "jack sprat could eat no fat and his wife could eat no lean";
@@ -33,16 +33,21 @@ namespace repeated_word
 
             for (int i = 0; i < words.Length; i++)
             {
-                string maybe = words[i];
+                int index = table.Hash(words[i]);
 
-                if (table.Contains(maybe))
+
+
+                if (table.Contains(words[i]))
                 {
-                    return maybe;
+                    return words[i];
+
 
                 }
                 else
                 {
-                    table.Add(maybe, maybe);
+
+                    table.Add(words[i], index);
+
                 }
 
             }

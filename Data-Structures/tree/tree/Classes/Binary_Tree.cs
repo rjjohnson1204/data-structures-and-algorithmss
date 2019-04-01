@@ -1,71 +1,87 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using tree;
+using Tree;
+using Tree.Classes;
 
-namespace tree
+namespace Tree
 {
-    class Binary_Tree
+    public class BinaryTree
     {
-        Node = root
-            new Node
-            
-            new node
+        public Node Root { get; set; }
+        public List<object> ListArray = new List<object>();
 
-
-        public void PreOrder()
+        public BinaryTree(Node node)
         {
-            
+            Root = node;
+        }
+
+        public BinaryTree()
+        {
+
+        }
+
+        public object[] PreOrder(Node root)
+        {
+            try
+            {
+                ListArray.Add(root.Value);
                 if (root.LeftChild != null)
                 {
-
-                PreOrder(root.LeftChild);
+                    PreOrder(root.LeftChild);
                 }
-
                 if (root.RightChild != null)
                 {
-
-                PreOrder(root.RightChild);
+                    PreOrder(root.RightChild);
                 }
-            
-            return root.Value;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return ListArray.ToArray();
         }
 
-        public void InOrder()
+        public object[] InOrder(Node root)
         {
-            if (Node.LeftChild != null)
+            try
             {
-                InOrder(Node.LeftChild);
-
+                if (root.LeftChild != null)
+                {
+                    InOrder(root.LeftChild);
+                }
+                ListArray.Add(root.Value);
+                if (root.RightChild != null)
+                {
+                    InOrder(root.RightChild);
+                }
             }
-
-            if (Node.RightChild != null)
+            catch (Exception e)
             {
-
-                InOrder(Node.RightChild);
+                Console.WriteLine(e.Message);
             }
-
-                    return Node.Value;
-
+            return ListArray.ToArray();
         }
 
-        public void PostOrder()
+        public object[] PostOrder(Node root)
         {
-            if (Node.LeftChild != null)
+            try
             {
-
-                InOrder(Node.LeftChild);
+                if (root.LeftChild != null)
+                {
+                    PostOrder(root.LeftChild);
+                }
+                if (root.RightChild != null)
+                {
+                    PostOrder(root.RightChild);
+                }
+                ListArray.Add(root.Value);
             }
-              
-            if (Node.RightChild != null)
+            catch (Exception e)
             {
-
-                InOrder(Node.RightChild);
+                Console.WriteLine(e.Message);
             }
-
-                return Node.Value;
-
-
+            return ListArray.ToArray();
         }
     }
 }
