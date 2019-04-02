@@ -12,6 +12,7 @@ namespace Tree_intersection
         {
             Console.WriteLine("Hello World!");
 
+            //tree 1
             BinaryTree tree1 = new BinaryTree();
             tree1.Root = new Node(1);
             tree1.Root.LeftChild = new Node(2);
@@ -21,6 +22,7 @@ namespace Tree_intersection
             tree1.Root.RightChild.RightChild = new Node(6);
             tree1.Root.RightChild.LeftChild = new Node(7);
 
+            //tree 2
             BinaryTree tree2 = new BinaryTree();
             tree2.Root = new Node(0);
             tree2.Root.LeftChild = new Node(2);
