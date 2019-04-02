@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree_intersection", "Tree_intersection\Tree_intersection.csproj", "{A38E4FF9-3259-411B-BEEE-6CE629A7AF57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree_intersection", "Tree_intersection\Tree_intersection.csproj", "{A38E4FF9-3259-411B-BEEE-6CE629A7AF57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree-intersection-test", "Tree-intersection-test\Tree-intersection-test.csproj", "{94F1E3E5-F192-40D3-90C6-C83C032F2E24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree-intersection-test", "Tree-intersection-test\Tree-intersection-test.csproj", "{94F1E3E5-F192-40D3-90C6-C83C032F2E24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

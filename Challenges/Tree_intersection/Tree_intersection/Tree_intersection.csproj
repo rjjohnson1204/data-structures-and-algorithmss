@@ -9,6 +9,9 @@
     <Reference Include="Hashtable">
       <HintPath>..\..\..\Data-Structures\Hashtable\Hashtable\bin\Debug\netcoreapp2.2\Hashtable.dll</HintPath>
     </Reference>
+    <Reference Include="Tree">
+      <HintPath>..\..\..\Data-Structures\tree\tree\bin\Debug\netcoreapp2.2\Tree.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
