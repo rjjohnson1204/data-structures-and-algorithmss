@@ -19,10 +19,10 @@ namespace XUnitTestProject1
         [Fact]
         public void Test2RepeatedWord()
         {
-            string test2 = "The care bears care";
+            string test2 = "The care bears cared";
 
 
-            Assert.Equal("care", Program.RepeatedWord(test2));
+            Assert.DoesNotContain("hammock",Program.RepeatedWord(test2));
 
         }
         [Fact]
