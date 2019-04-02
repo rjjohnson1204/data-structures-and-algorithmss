@@ -4,15 +4,13 @@ namespace Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
 
         [Test]
-        public void Test1()
+        public void Test1RepeatedWord()
         {
-            Assert.Pass();
+            string test1 = "I have ten toes and ten fingers";
+
+            Assert.Equal("ten", RepeatedWord(test1);
         }
     }
 }
