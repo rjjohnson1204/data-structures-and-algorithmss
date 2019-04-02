@@ -25,7 +25,7 @@ namespace repeated_word
 
         }
         // method to find the repeated word
-        public static string RepeatedWord(string gnirts)
+        public static string RepeatedWord(string gnirts) 
         {
             //splits string into individual strings
             string[] words = gnirts.Split(' ');
