@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Hashtable.Classes;
+using System;
+using System.Collections.Generic;
 using Tree;
 using Tree.Classes;
 
@@ -28,6 +30,56 @@ namespace Tree_intersection
             tree2.Root.RightChild.RightChild = new Node(10);
             tree2.Root.RightChild.LeftChild = new Node(12);
 
+
+
+            List<object> intersectedValues = TreeIntersection(tree1, tree2);
+            foreach (var item in intersectedValues)
+            {
+                Console.Write($" Intersected values {item}");
+            }
+        }
+
+
+
+        public static List<object> TreeIntersection(BinaryTree tree1, BinaryTree tree2)
+        {
+            List<object> CommonValues = new List<object>();
+            HashTable table = new HashTable(100);
+
+            Node root1 = tree1.Root;
+            Node root2 = tree2.Root;
+
+            /// first helper method to traverse first tree adding to hash table
+            void TraverseOne(Node Root)
+            {
+                if (Root == null)
+                {
+                    return;
+                }
+
+                TraverseOne(Root.LeftChild);
+                TraverseOne(Root.RightChild);
+                table.Add(Root.Value.ToString(), Root.Value);
+            }
+            TraverseOne(root1);
+            ///second helper method to traverse second tree to cross reference table
+            void TraverseTwo(Node Root)
+            {
+                if (Root == null)
+                {
+                    return;
+                }
+
+                TraverseTwo(Root.LeftChild);
+                TraverseTwo(Root.RightChild);
+                if (table.Contains(Root.Value.ToString()))
+                {
+                    CommonValues.Add(Root.Value);
+                }
+
+            }
+            TraverseTwo(root2);
+            return CommonValues;
         }
     }
 }
